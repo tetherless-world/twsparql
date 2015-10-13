@@ -1,0 +1,24 @@
+<sparql query="person.rq" i="PatrickWest"
+xslt="generate/person-header2.xsl" />
+<table class="infobox">
+<sparql xslt="generate/person-infobox2.xsl" />
+<tr><td colspan="2" class="section">Additional Info</td></tr>
+<tr><td> </td>
+<td>
+<a href="/web/person/PatrickWest/Resume">Resume</a>
+<a href="/web/person/PatrickWest/Publications">Publications</a>
+<a href="/web/person/PatrickWest/Presentations">Presentations</a>
+<a href="/web/person/PatrickWest/Projects">Projects</a>
+<a href="/web/person/PatrickWest/Calendar">Calendar</a>
+<a href="/web/person/PatrickWest/Sandbox">Sandboxes</a>
+<a href="https://twitter.com/mrpatrickwest"
+class="twitter-follow-button" data-show-count="false">Follow
+@mrpatrickwest</a>
+<script src="//platform.twitter.com/widgets.js"
+type="text/javascript"></script>
+</td></tr>
+</table>
+<sparql xslt="generate/person-interests.xsl" />
+<sparql xslt="generate/person-bio.xsl" />
+<sparql xslt="generate/person-affiliates.xsl" />
+
