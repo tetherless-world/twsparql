@@ -122,8 +122,7 @@ class TWSparqlCmdCache implements TWSparqlCache {
    * the query text
    * @param string $results The query text returned by dereferencing $queryUri 
    */
-  public function cacheQueryResult($pageid, $queryUri, $endpoint,
-								   $results, $expires) {
+  public function cacheQueryResult($pageid, $queryUri, $endpoint, $results) {
   }
   
   /**
@@ -135,30 +134,28 @@ class TWSparqlCmdCache implements TWSparqlCache {
    * @param string $expires An optional duration to wait before expiring the
    * result; defaults to TWSparql::getEngine()->getCacheTTL()
    */
-  public function cacheFinal($pageid, $queryUri, $endpoint, $xsltUri,
-							 $result, $expires) {
+  public function cacheFinal($pageid, $queryUri, $endpoint, $xsltUri, $result) {
   }
   
   /**
    * Clears the cached copy of $queryUri, if any.
    * @param string $queryUri 
    */
-  public function clearQueryResultCache($queryUri, $endpoint) {
+  public function clearQueryResultCache($pageid, $queryUri, $endpoint) {
   }
 
-  public function clearFinalCache($queryUri, $endpoint, $xsltUri) {
+  public function clearFinalCache($pageid, $queryUri, $endpoint, $xsltUri) {
   }
   
   /**
    * Gets the cached content for $queryUri, or NULL if no content is available.
    * @param string $queryUri 
    */
-  public function getCachedQueryResult($pageid, $queryUri, $endpoint) {
+  public function getCachedQueryResult($pageid, $queryUri, $endpoint, $expires) {
     return NULL ;
   }
-
-  public function getCachedFinal($pageid, $queryUri, $endpoint, $xsltUri) {
-	return NULL ;
+  public function getCachedFinal($pageid, $queryUri, $endpoint, $xsltUri, $expires) {
+    return NULL ;
   }
 }
 
