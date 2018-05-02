@@ -224,7 +224,7 @@ abstract class TWSparql {
       }
     
       $content = $newContent . substr($content,$start);
-	  $content .= "<script type=\"text/javascript\">window.twsparql = \"".$this->getSiteBase()."twsparql/query\";</script>";
+	  $content .= "<script type=\"text/javascript\">window.twsparql = \"".$this->getSiteBase()."/twsparql/query\";</script>";
     }
   
 	// - replace the tag with the rendered result
